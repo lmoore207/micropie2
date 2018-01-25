@@ -66,7 +66,7 @@ public class PhraseExtractorTest {
 		
 		//extractor.getNounPhrases(phraseStructure);
 		
-		PosTagger posTagger = new PosTagger("edu/stanford/nlp/models/pos-tagger/english-bidirectional/english-bidirectional-distsim.tagger");
+		/*PosTagger posTagger = new PosTagger("edu/stanford/nlp/models/pos-tagger/english-bidirectional/english-bidirectional-distsim.tagger");
 		
 		LexicalizedParser lexParser = LexicalizedParser.loadModel("edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz");
 		StanfordParserWrapper parser = new StanfordParserWrapper(null, lexParser);
@@ -87,7 +87,7 @@ public class PhraseExtractorTest {
 		List<Phrase> phraseList = extractor.extractVerbPharse(lexParser.parse(sentence));
 		for(Phrase p : phraseList){
 			System.out.println(p.getType()+":"+p.getNegation()+"|"+p.getText()+" ["+p.getStartIndex()+"-"+p.getEndIndex()+"]"+" ["+p.getStart()+"-"+p.getEnd()+"] the core is:"+p.getCore()+" the modifer is:"+p.getModifer());
-		}
+		}*/
 		
 		//RelationParser relationParser = new RelationParser();
 		//PhraseRelationGraph prGraph = relationParser.parseCoordinativeRelationGraph(phraseList,taggedWords);

@@ -52,7 +52,7 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 
 public class GeographicLocationExtractorTest {
 	
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 		String inputDirectory = "F:/MicroPIE/micropieInput";
 		String abbreviationFile = inputDirectory + File.separator + "abbrevlist/abbrevlist.csv";
 		LinkedHashMap<String, String> abbreviations = null;
@@ -131,5 +131,5 @@ public class GeographicLocationExtractorTest {
 			System.out.println(classifiedSentence.getText()+" "+content);
 		}
 		
-	}
+	}*/
 }

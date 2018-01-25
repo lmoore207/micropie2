@@ -4,15 +4,13 @@ ouputCharacterListString=%G+C|Cell shape|Cell length|cell width/diameter|Cell re
 svmLabelAndCategoryMappingFile=svmlabelandcategorymapping/categoryMapping_micropie.txt
 firstLevelCategoryMappingFile=svmlabelandcategorymapping/categoryMapping_category.txt
 labelValutypeFile=svmlabelandcategorymapping/character_valuetype.txt
-#the following three are all folders (not file)
 trainedModelFile=character_model
 categoryModelFile=category_model
 characterValueExtractorsFolder=CharacterValueExtractors
-#this one points to the models folder, not configuration folder.
-configurationFolder=/var/lib/etcsite/resources/textCapture/micropie/models
+configurationFolder=F:/MicroPIE/micropie0.2_model
 
 ##GeoTagger configuration
-wordNetDirectory=/var/lib/etcsite/resources/shared/wordnet/wn31/dict
+wordNetDirectory=E:/etcsite/resources/shared/wordnet/wn31/dict
 brownClusterFile=geotagger/brownclusters_200.cluster
 wordEmbeddingClusterFile=geotagger/alltoken_200.cluster
 geoUniqTermFile=geotagger/GeoUniqNames_allCountries_2.txt

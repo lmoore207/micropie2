@@ -10,10 +10,10 @@ import com.google.inject.name.Names;
 
 import edu.arizona.biosemantics.micropie.Config;
 import edu.arizona.biosemantics.micropie.MicroPIEProcessor;
-import edu.arizona.biosemantics.micropie.MicroPIEProcessorOld;
+//import edu.arizona.biosemantics.micropie.MicroPIEProcessorOld;
 import edu.arizona.biosemantics.micropie.classify.Label;
-import edu.arizona.biosemantics.micropie.extract.usp.USPBasedExtractor;
-import edu.arizona.biosemantics.micropie.extract.usp.USPRequest;
+//import edu.arizona.biosemantics.micropie.extract.usp.USPBasedExtractor;
+//import edu.arizona.biosemantics.micropie.extract.usp.USPRequest;
 import edu.arizona.biosemantics.micropie.model.Sentence;
 
 public class USPTest {

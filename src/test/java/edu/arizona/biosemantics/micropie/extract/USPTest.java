@@ -14,8 +14,8 @@ import edu.arizona.biosemantics.micropie.SentenceBatchProcessor;
 import edu.arizona.biosemantics.micropie.SentencePredictor;
 import edu.arizona.biosemantics.micropie.classify.Label;
 import edu.arizona.biosemantics.micropie.extract.keyword.SalinityPreferenceExtractor;
-import edu.arizona.biosemantics.micropie.extract.usp.USPBasedExtractor;
-import edu.arizona.biosemantics.micropie.extract.usp.USPRequest;
+//import edu.arizona.biosemantics.micropie.extract.usp.USPBasedExtractor;
+//import edu.arizona.biosemantics.micropie.extract.usp.USPRequest;
 import edu.arizona.biosemantics.micropie.io.CSVAbbreviationReader;
 import edu.arizona.biosemantics.micropie.io.CSVClassifiedSentenceWriter;
 import edu.arizona.biosemantics.micropie.io.CSVTaxonCharacterMatrixWriter;
@@ -71,7 +71,7 @@ public class USPTest {
 			}
 		}
 		*/
-		String inputDirectory = "F:/MicroPIE/micropieInput";
+		/*String inputDirectory = "F:/MicroPIE/micropieInput";
 		String abbreviationFile = inputDirectory + File.separator + "abbrevlist/abbrevlist.csv";
 		LinkedHashMap<String, String> abbreviations = null;
 		CSVAbbreviationReader abbreviationReader = new CSVAbbreviationReader();
@@ -174,7 +174,7 @@ public class USPTest {
 			MultiClassifiedSentence classifiedSentence = new MultiClassifiedSentence(testSentence, prediction);
 			List<CharacterValue> content = uspExtractor.getCharacterValue(classifiedSentence);
 			System.out.println(classifiedSentence.getText()+" "+content);
-		}
+		}*/
 		
 	}
 }

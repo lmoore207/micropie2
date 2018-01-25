@@ -15,7 +15,7 @@ import edu.arizona.biosemantics.micropie.classify.ILabel;
 public class TrainClassifierTest {
 
 	public static void main(String[] args) {
-		Config config = new Config();
+	/*	Config config = new Config();
 		String prjInputFolder = "F:/MicroPIE/micropieInput";
 		String prjOutputFolder ="F:/MicroPIE/micropieInput/output";
 		config.setInputDirectory(prjInputFolder);
@@ -41,7 +41,7 @@ public class TrainClassifierTest {
 		List<ILabel> labels = injector.getInstance(Key.get(new TypeLiteral<List<ILabel>>() {},  Names.named("MultiSVMClassifier_Labels")));
 		run.trainNew(trainFiles,savedModelFolder,labels, categoryMappingFile);//the first parameter is not used.
 		//run.testTruePositive(testSentFile,savedModelFolder,labels);
-		//run.testTrueNegative(testSentFile,savedModelFolder,labels);
+		//run.testTrueNegative(testSentFile,savedModelFolder,labels);*/
 	}
 
 }

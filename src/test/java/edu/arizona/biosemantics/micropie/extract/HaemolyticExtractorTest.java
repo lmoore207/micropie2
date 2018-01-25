@@ -83,7 +83,7 @@ public class HaemolyticExtractorTest {
 			}
 		}
 		*/
-		String inputDirectory = "F:/MicroPIE/micropieInput";
+		/*String inputDirectory = "F:/MicroPIE/micropieInput";
 		String abbreviationFile = inputDirectory + File.separator + "abbrevlist/abbrevlist.csv";
 		LinkedHashMap<String, String> abbreviations = null;
 		CSVAbbreviationReader abbreviationReader = new CSVAbbreviationReader();
@@ -163,7 +163,7 @@ public class HaemolyticExtractorTest {
 			//System.out.println("current doing:character "+character+" by ["+extractor.getClass().getName()+"]");
 			List<CharacterValue> content = extractor.getCharacterValue(classifiedSentence);
 			System.out.println(classifiedSentence.getText()+" "+content);
-		}
+		}*/
 		
 	}
 }

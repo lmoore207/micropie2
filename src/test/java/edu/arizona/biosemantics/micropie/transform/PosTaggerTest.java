@@ -9,7 +9,7 @@ public class PosTaggerTest {
 	public static void main(String[] args) {
 		// wsj-0-18-bidirectional-nodistsim.tagger is accordant with
 		// MaxentTagger
-		
+		/*
 		PosTagger posTagger = new PosTagger();
 		String sample = "This is a sample text. I am OK.";
 		String sample2 = "���ڴ������״��������̥��Ը����������Ĺ�����ȫ�����£�";
@@ -17,7 +17,7 @@ public class PosTaggerTest {
 
 		// Output the result
 
-		System.out.println(tagged);
+		System.out.println(tagged);*/
 		/*
 		String[] words = { "The", "slimy", "slug", "crawled", "over", "the", "long", ",", "green", "grass", "." };
 		

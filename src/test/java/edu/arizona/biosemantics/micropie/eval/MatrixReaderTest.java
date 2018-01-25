@@ -6,7 +6,7 @@ import edu.arizona.biosemantics.micropie.io.MatrixReader;
 
 public class MatrixReaderTest {
 
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 		String[] basicFields = {"corrected by", "taxon", "file", "16S rRNA accession #", "Family", "Genus", "Species", "Strain", "Genome size"};
 		String matrixFile = "F:/MicroPIE/evaluation/gold_matrix_examples_4_jin.csv";
 		
@@ -31,5 +31,5 @@ public class MatrixReaderTest {
 		}
 		
 		matrixReader.parseMatrix("#");
-	}
+	}*/
 }

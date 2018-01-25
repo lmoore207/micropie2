@@ -7,13 +7,13 @@ import com.google.inject.name.Names;
 
 import edu.arizona.biosemantics.micropie.Config;
 import edu.arizona.biosemantics.micropie.MicroPIEProcessor;
-import edu.arizona.biosemantics.micropie.MicroPIEProcessorOld;
+//import edu.arizona.biosemantics.micropie.MicroPIEProcessorOld;
 
 public class MicroPIEProcessTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Config config = new Config();
+		/*Config config = new Config();
 		String prjInputFolder = "F:/MicroPIE/micropieInput";
 		String prjOutputFolder ="F:/MicroPIE/micropieInput/output";
 		config.setInputDirectory(prjInputFolder);
@@ -43,7 +43,7 @@ public class MicroPIEProcessTest {
 		
 		MicroPIEProcessor microPIEProcessor = injector.getInstance(MicroPIEProcessor.class);
 		//microPIEProcessor.processFolder(inputFolder, svmLabelAndCategoryMappingFile, predictionsFile, outputMatrixFile);
-		microPIEProcessor.processFolder(inputFolder,predictionsFile, outputMatrixFile);
+		microPIEProcessor.processFolder(inputFolder,predictionsFile, outputMatrixFile);*/
 	}
 
 }

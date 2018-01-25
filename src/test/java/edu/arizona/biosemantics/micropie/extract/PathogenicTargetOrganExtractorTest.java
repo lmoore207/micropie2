@@ -83,7 +83,7 @@ public class PathogenicTargetOrganExtractorTest {
 			}
 		}
 		*/
-		String inputDirectory = "F:/MicroPIE/micropieInput";
+		/*String inputDirectory = "F:/MicroPIE/micropieInput";
 		String abbreviationFile = inputDirectory + File.separator + "abbrevlist/abbrevlist.csv";
 		LinkedHashMap<String, String> abbreviations = null;
 		CSVAbbreviationReader abbreviationReader = new CSVAbbreviationReader();
@@ -164,7 +164,7 @@ public class PathogenicTargetOrganExtractorTest {
 			List<CharacterValue> content = extractor.getCharacterValue(classifiedSentence);
 			postProcessor.postProcessor(content);
 			System.out.println(classifiedSentence.getText()+" "+content+"\n");
-		}
+		}*/
 		
 	}
 }

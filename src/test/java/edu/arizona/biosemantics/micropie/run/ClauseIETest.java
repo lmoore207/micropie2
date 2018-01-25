@@ -5,9 +5,9 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.mpii.clausie.ClausIE;
-import de.mpii.clausie.Clause;
-import de.mpii.clausie.Proposition;
+//import de.mpii.clausie.ClausIE;
+//import de.mpii.clausie.Clause;
+//import de.mpii.clausie.Proposition;
 import edu.arizona.biosemantics.common.log.LogLevel;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
@@ -23,8 +23,10 @@ import edu.stanford.nlp.process.TokenizerFactory;
  *
  */
 public class ClauseIETest {
+	public static void main(String[] args){}
+}
 	
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 		
 		
 		LexicalizedParser lexicalizedParser = LexicalizedParser.loadModel("edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz");;
@@ -123,4 +125,4 @@ public class ClauseIETest {
 		
 		log(LogLevel.INFO, "Done handling case A");
 	}
-}
+}*/

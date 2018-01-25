@@ -28,7 +28,7 @@ import edu.arizona.biosemantics.micropie.extract.TaxonCharacterMatrixCreator;
 import edu.arizona.biosemantics.micropie.extract.context.RelationParser;
 import edu.arizona.biosemantics.micropie.extract.keyword.FermentationProductExtractor;
 import edu.arizona.biosemantics.micropie.extract.keyword.KeywordBasedExtractor;
-import edu.arizona.biosemantics.micropie.extract.keyword.OtherMetobolicProductExtractor;
+//import edu.arizona.biosemantics.micropie.extract.keyword.OtherMetobolicProductExtractor;
 import edu.arizona.biosemantics.micropie.extract.keyword.PhraseBasedExtractor;
 import edu.arizona.biosemantics.micropie.extract.regex.GcExtractor;
 import edu.arizona.biosemantics.micropie.io.CSVAbbreviationReader;
@@ -53,7 +53,7 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 public class OtherMetobolicProductExtractorTest {
 	
 	
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 		String inputDirectory = "C:\\micropie\\micropie0.2_model";
 		String abbreviationFile = inputDirectory + File.separator + "abbrevlist/abbrevlist.csv";
 		LinkedHashMap<String, String> abbreviations = null;
@@ -140,5 +140,5 @@ public class OtherMetobolicProductExtractorTest {
 			System.out.println(classifiedSentence.getText()+" "+content+"\n");
 		}
 		
-	}
+	}*/
 }

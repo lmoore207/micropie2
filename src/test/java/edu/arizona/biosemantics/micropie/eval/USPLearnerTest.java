@@ -4,7 +4,7 @@ import java.util.Properties;
 
 import com.google.inject.name.Named;
 
-import edu.arizona.biosemantics.micropie.USPLearner;
+//import edu.arizona.biosemantics.micropie.USPLearner;
 import edu.arizona.biosemantics.micropie.nlptool.StanfordParserWrapper;
 import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
@@ -13,7 +13,7 @@ public class USPLearnerTest {
 	
 	
 	
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 		Properties stanfordCoreProperties = new Properties();
 		stanfordCoreProperties.put("annotators", "tokenize, ssplit");
 		StanfordCoreNLP sfCoreNLP = new StanfordCoreNLP(stanfordCoreProperties);
@@ -29,5 +29,5 @@ public class USPLearnerTest {
 			
 			
 		USPLearner uspLearner = new USPLearner(null, null, null);
-	}
+	}*/
 }

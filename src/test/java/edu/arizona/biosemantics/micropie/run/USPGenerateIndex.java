@@ -2,7 +2,7 @@ package edu.arizona.biosemantics.micropie.run;
 
 import java.util.Properties;
 
-import edu.arizona.biosemantics.micropie.USPLearner;
+//import edu.arizona.biosemantics.micropie.USPLearner;
 import edu.arizona.biosemantics.micropie.io.XMLOldestTextReader;
 import edu.arizona.biosemantics.micropie.io.XMLTextReader;
 import edu.arizona.biosemantics.micropie.nlptool.SentenceSpliter;
@@ -22,7 +22,7 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 public class USPGenerateIndex {
 
 	public static void main(String[] args){
-		String uspBaseFolder = "F:\\MicroPIE\\micropieInput\\usp_base_1035";
+		/*String uspBaseFolder = "F:\\MicroPIE\\micropieInput\\usp_base_1035";
 		String databaseFolder  = "F:\\MicroPIE\\datasets\\USP_625+344+66";
 		String characterValueExtractorsFolder = null;
 		
@@ -48,6 +48,6 @@ public class USPGenerateIndex {
 		//create folders
 		uspLearner.initialize();
 		
-		uspLearner.buildFromDataset(databaseFolder);
+		uspLearner.buildFromDataset(databaseFolder);*/
 	}
 }
