@@ -1,29 +1,22 @@
 package edu.arizona.biosemantics.micropie;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-import au.com.bytecode.opencsv.CSVReader;
-
 import com.google.inject.AbstractModule;
 import com.google.inject.Provider;
-import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import com.google.inject.TypeLiteral;
-import com.google.inject.name.Named;
 import com.google.inject.name.Names;
 
 import edu.arizona.biosemantics.common.log.LogLevel;
@@ -31,35 +24,12 @@ import edu.arizona.biosemantics.micropie.classify.CategoryLabel;
 import edu.arizona.biosemantics.micropie.classify.ILabel;
 import edu.arizona.biosemantics.micropie.classify.Label;
 import edu.arizona.biosemantics.micropie.classify.LabelPhraseValueType;
-import edu.arizona.biosemantics.micropie.extract.AbstractCharacterValueExtractor;
 import edu.arizona.biosemantics.micropie.extract.CharacterValueExtractorProvider;
 import edu.arizona.biosemantics.micropie.extract.CharacterValueExtractorReader;
-import edu.arizona.biosemantics.micropie.extract.ICharacterBatchExtractor;
 import edu.arizona.biosemantics.micropie.extract.ICharacterValueExtractor;
 import edu.arizona.biosemantics.micropie.extract.ICharacterValueExtractorProvider;
 import edu.arizona.biosemantics.micropie.extract.crf.FeatureRender;
-import edu.arizona.biosemantics.micropie.extract.keyword.AntibioticPhraseExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.AntibioticSyntacticExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.CellDiameterExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.CellLengthExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.CellShapeExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.CellSizeExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.CellWidthExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.FermentationSubstratesNotUsed;
-import edu.arizona.biosemantics.micropie.extract.regex.GcExtractor;
 import edu.arizona.biosemantics.micropie.extract.regex.GcFigureExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.GrowthNaclMaxExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.GrowthNaclMinExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.GrowthNaclOptimumExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.GrowthPhExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.GrowthPhMaxExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.GrowthPhMinExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.GrowthPhOptimumExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.GrowthTempMaxExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.GrowthTempMinExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.GrowthTempOptimumExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.InorganicSubstancesNotUsedExtractor;
-import edu.arizona.biosemantics.micropie.extract.regex.OrganicCompoundsNotUsedOrNotHydrolyzedExtractor;
 import edu.arizona.biosemantics.micropie.io.CSVAbbreviationReader;
 import edu.arizona.biosemantics.micropie.io.CSVSentenceReader;
 import edu.arizona.biosemantics.micropie.io.CharacterReader;
@@ -82,6 +52,8 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.process.CoreLabelTokenFactory;
 import edu.stanford.nlp.process.PTBTokenizer;
 import edu.stanford.nlp.process.TokenizerFactory;
+
+
 
 
 /**
