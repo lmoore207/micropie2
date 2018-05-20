@@ -57,13 +57,14 @@ public class Main {
 	 */
 	public static void main(String[] args) throws Throwable {
 		Main main = new Main();
+		
 		//args = "-i in -o out -m models -f xml".split(" ");
 		
 		//-f xml
 		//args = "-i F:\\MicroPIE\\datasets\\craft -o F:\\MicroPIE\\ext\\2017new -m F:/MicroPIE/micropie0.2_model  -vi true -f mc".split("\\s+");
 		
 		//Part_One_111_final  GSM V1
-		args = "-i F:\\MicroPIE\\datasets\\Part_One_111_final -o F:\\MicroPIE\\ext\\GSMv1 -vi false".split("\\s+");
+		//args = "-i F:\\MicroPIE\\datasets\\Part_One_111_final -o F:\\MicroPIE\\ext\\GSMv1 -vi false".split("\\s+");
 		//args = "-i F:/MicroPIE/datasets/2017/GSM_v2_103_desccriptions_011217 -o F:/MicroPIE/ext/2017new -vi true".split("\\s+");// -f mc
 		//System.out.println(args);
 		main.parse(args);
@@ -116,7 +117,7 @@ public class Main {
 //		    	config.setInputDirectory(commandLine.getOptionValue("m"));
 //		    }
 		    if(!commandLine.hasOption("o")) {
-		    	//log(LogLevel.ERROR, "You have to specify an output directory");
+		    	log(LogLevel.ERROR, "You have to specify an output directory");
 		    	throw new IllegalArgumentException();
 		    } else {
 		    	outputFolder = commandLine.getOptionValue("o");
