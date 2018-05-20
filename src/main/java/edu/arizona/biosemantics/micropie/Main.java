@@ -79,7 +79,7 @@ public class Main {
 		Options options = new Options();
 		options.addOption("i", "input", true, "input directory to use");
 		options.addOption("o", "output", true, "output directory to use");
-		//options.addOption("m", "model", true, "model folders");
+		options.addOption("m", "model", true, "model folders");
 		options.addOption("f", "format", true, "outputformat");
 		options.addOption("vi", "value infer", true, "infer value for unspecific values");
 		options.addOption("pg", "propagate genus", true, "propagate values from the corresponding genus");
@@ -110,12 +110,12 @@ public class Main {
 		    } else {
 		    	xmlFolder = commandLine.getOptionValue("i");
 		    }
-//		    if(!commandLine.hasOption("m")) {
-//		    	log(LogLevel.ERROR, "You have to specify an model directory");
-//		    	throw new IllegalArgumentException();
-//		    } else {
-//		    	config.setInputDirectory(commandLine.getOptionValue("m"));
-//		    }
+		    if(!commandLine.hasOption("m")) {
+		    	log(LogLevel.ERROR, "You have to specify an model directory");
+		    	throw new IllegalArgumentException();
+		    } else {
+		    	config.setInputDirectory(commandLine.getOptionValue("m"));
+		    }
 		    if(!commandLine.hasOption("o")) {
 		    	log(LogLevel.ERROR, "You have to specify an output directory");
 		    	throw new IllegalArgumentException();
@@ -160,7 +160,7 @@ public class Main {
 		    
 		    
 		    
-		    config.setInputDirectory(Configuration.configurationFolder);
+		    //config.setInputDirectory(Configuration.configurationFolder);
 			Injector injector = Guice.createInjector(config);
 		    MicroPIEProcessor microPIEProcessor = injector.getInstance(MicroPIEProcessor.class);
 		    
